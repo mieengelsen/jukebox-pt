@@ -276,13 +276,8 @@ function resetTimer() {
 
   // Fjerner "active"-klassen, så screensaver skjules
   screensaver.classList.remove("active");
-<<<<<<< Updated upstream
-  timer = setTimeout(activateScreensaver, 6000);
-=======
 
-  // Starter en ny timer, som aktiverer screensaver efter 3000 ms
-  timer = setTimeout(activateScreensaver, 3000);
->>>>>>> Stashed changes
+  timer = setTimeout(activateScreensaver, 6000);
 }
 
 // Funktion der sætter event listeners op
