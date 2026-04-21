@@ -157,7 +157,7 @@ function activateScreensaver() {
 function resetTimer() {
   clearTimeout(timer);
   screensaver.classList.remove("active");
-  timer = setTimeout(activateScreensaver, 3000);
+  timer = setTimeout(activateScreensaver, 6000);
 }
 
 function setupListeners() {
