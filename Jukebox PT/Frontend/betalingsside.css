@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background-color: #001f4d;
+  font-family: "Proza Libre", sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px 30px;
+}
+
+.left-icons {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.left-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.h1 {
+  margin: 0;
+  font-size: 60px;
+  color: #f7c9df;
+  text-align: center;
+  text-shadow: 0 0 10px #ff2bd6;
+  animation: pulse 1.5s infinite;
+  padding-bottom: 5%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #ff2bd6;
+  }
+  50% {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px #ff2bd6;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #ff2bd6;
+  }
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 500px;
+  height: 400px;
+  background: #f7c9df;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.h2 {
+  margin: 0 0 20px 0;
+  font-size: 40px;
+  color: #00193a;
+  text-align: center;
+}
+
+.box img {
+  margin-top: 0px;
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+  padding-top: 0px;
+}
+
+.box textarea {
+  width: 100%;
+  height: 180px;
+  resize: none;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.tilbage-knap {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.betal-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.betal-box {
+  background: #f7c9df;
+  color: #00193a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 24px;
+}
+
+.p {
+  color: #00193a;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}

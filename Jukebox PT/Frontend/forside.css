@@ -1,0 +1,222 @@
+body {
+  background-color: #00193a; /* bestemmer baggrundsfrave*/
+}
+
+.h1 {
+  font-family: "Proza Libre", sans-serif; /*vælger fontstyle fra google fonts*/
+  font-style: normal; /* definere om den skal have en bestemt "style*/
+  font-size: 700%; /* bestemmer størrelsen på skriften*/
+  color: #f7c9df; /* bestemmer farven på skrifen*/
+  text-align: center; /* bestemmer hvor på siden skriften står*/
+  padding-top: 0px; /* gør så der ikke er så meget luft til toppen*/
+  margin-top: 0px; /* samme som ovenfor, så overskriften skubbes op på siden*/
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  animation: pulse 1.5s infinite; /* starter puls animation, og siger den skal tage 1,5 sek, og skal fortsætte for altid*/
+  color: #f7c9df; /* bestemmer puls farven*/
+  text-shadow: 0 0 10px #f7c9df; /* definere farven på den skygge der kommer, som også er med til at lave 2t glow udtryk*/
+}
+
+@keyframes pulse {
+  /* definere selve animationen med navnet pulse*/
+  0% {
+    /* anitmationen starter på 0%*/
+    transform: scale(1); /* den er i normal størrelse*/
+    text-shadow: 0 0 5px #ff2bd6; /* definere selve skyggen i den normale størrelse, og giver den pink skygge*/
+  }
+  50% {
+    /* midt i animtionen*/
+    transform: scale(1.1); /* gør animationselementet lidt større */
+    text-shadow: 0 0 20px #ff2bd6; /* gør skyggen anderledes*/
+  }
+  100% {
+    /* slut af animation*/
+    transform: scale(1); /* tilbage til normal størrelse*/
+    text-shadow: 0 0 5px #ff2bd6; /*tilbage til samme værdier som ved animationens start*/
+  }
+}
+
+.container1 {
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* centrer vandret */
+  align-items: center; /* centrer lodret */
+}
+.box {
+  width: 600px;
+  height: 450px;
+  background: #f7c9df;
+  border-radius: 10px;
+}
+
+.h2 {
+  font-family: "Proza Libre", sans-serif; /*vælger fontstyle fra google fonts*/
+  font-style: normal; /* definere om den skal have en bestemt "style*/
+  font-size: 300%; /* bestemmer størrelsen på skriften*/
+  color: #00193a; /* bestemmer farven på skrifen*/
+  text-align: center; /* bestemmer hvor på siden skriften står*/
+  padding-top: 0%; /* gør så der ikke er så meget luft til toppen*/
+  margin-top: 0%; /* samme som ovenfor, så overskriften skubbes op på siden*/
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.search-container input {
+  width: 800px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: #170152;
+  color: #f7c9df;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(255, 0, 200, 0.5);
+  box-sizing: border-box;
+}
+
+.search-container input::placeholder {
+  color: #f7c9df;
+  opacity: 0.8;
+}
+
+.search-container input:focus {
+  box-shadow: 0 0 20px rgba(255, 0, 200, 0.9);
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  background: #170152;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  max-height: 250px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(255, 0, 200, 0.5);
+}
+
+.result-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #f7c9df;
+  font-size: 16px;
+}
+
+.result-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.pris {
+  font-family: "Proza Libre", sans-serif; /*vælger fontstyle fra google fonts*/
+  font-style: normal; /* definere om den skal have en bestemt "style*/
+  font-size: 200%; /* bestemmer størrelsen på skriften*/
+  color: #f7c9df; /* bestemmer farven på skrifen*/
+  text-align: center; /* bestemmer hvor på siden skriften står*/
+  padding-top: 2px; /* gør så der ikke er så meget luft til toppen*/
+  margin-top: 0åx; /* samme som ovenfor, så overskriften skubbes op på siden*/
+}
+body {
+  margin: 0;
+  background-color: #001f4d;
+  font-family: "Proza Libre", sans-serif;
+  align-items: center;
+}
+.topbar {
+  position: relative;
+  height: 180px;
+}
+
+.h1 {
+  .h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+
+    color: #f7c9df;
+    font-size: 120px;
+    text-shadow: 0 0 20px #ff4dff;
+  }
+}
+
+.left-icons {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.left-icons img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.kurv {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.kurv img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+#screensaver {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00193a;
+  color: #ff4dff;
+  display: flex;
+  animation: pulse 1.5s infinite; /* starter puls animation, og siger den skal tage 1,5 sek, og skal fortsætte for altid*/
+  color: #f7c9df; /* bestemmer puls farven*/
+  text-shadow: 0 0 10px #f7c9df; /* definere farven på den skygge der kommer, som også er med til at lave 2t glow udtryk*/
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+  z-index: 9999;
+}
+
+#screensaver.active {
+  opacity: 5;
+  pointer-events: all;
+}
+
+.liste {
+  list-style: none; /* fjerner prikker */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.liste li {
+  color: #00193a;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 16px;
+}
